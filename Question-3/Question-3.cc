@@ -79,7 +79,7 @@ int main() {
 
     // Just to check paths - ensure access to candump.log
     std::filesystem::path cwd = std::filesystem::current_path();
-    std::cout << "Current working directory: " << cwd << std::endl;
+    // std::cout << "Current working directory: " << cwd << std::endl;
 
     // Open log file
     std::ifstream file("../Question-3/candump.log");

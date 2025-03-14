@@ -223,8 +223,33 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
   /usr/include/c++/11/tr1/modified_bessel_func.tcc \
   /usr/include/c++/11/tr1/poly_hermite.tcc \
   /usr/include/c++/11/tr1/poly_laguerre.tcc \
-  /usr/include/c++/11/tr1/riemann_zeta.tcc
+  /usr/include/c++/11/tr1/riemann_zeta.tcc \
+  /usr/include/c++/11/memory \
+  /usr/include/c++/11/bits/stl_tempbuf.h \
+  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/11/bits/align.h \
+  /usr/include/c++/11/bit \
+  /usr/include/c++/11/bits/unique_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr.h \
+  /usr/include/c++/11/bits/shared_ptr_base.h \
+  /usr/include/c++/11/bits/allocated_ptr.h \
+  /usr/include/c++/11/bits/refwrap.h \
+  /usr/include/c++/11/ext/concurrence.h \
+  /usr/include/c++/11/bits/shared_ptr_atomic.h \
+  /usr/include/c++/11/bits/atomic_base.h \
+  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/11/backward/auto_ptr.h \
+  /usr/include/c++/11/pstl/glue_memory_defs.h \
+  /usr/include/c++/11/pstl/execution_defs.h
 
+
+/usr/include/c++/11/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/11/memory:
 
 /usr/include/c++/11/tr1/riemann_zeta.tcc:
 
@@ -252,7 +277,11 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 
 /usr/include/c++/11/bits/stl_bvector.h:
 
+/usr/include/c++/11/backward/auto_ptr.h:
+
 /usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/bits/align.h:
 
 /usr/include/c++/11/vector:
 
@@ -287,6 +316,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/c++/11/bits/locale_facets.h:
 
 /usr/include/c++/11/bits/basic_ios.h:
+
+/usr/include/c++/11/bits/atomic_lockfree_defines.h:
 
 /usr/include/c++/11/tr1/bessel_function.tcc:
 
@@ -339,6 +370,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/c++/11/bits/shared_ptr.h:
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
@@ -400,6 +433,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 
 /usr/include/c++/11/bits/range_access.h:
 
+/usr/include/c++/11/bit:
+
 /usr/include/c++/11/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11/cstdlib:
@@ -407,6 +442,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/c++/11/bits/stl_tempbuf.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
@@ -428,6 +465,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/include/c++/11/bits/unique_ptr.h:
+
 /usr/include/c++/11/ostream:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
@@ -439,6 +478,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/usr/include/c++/11/pstl/execution_defs.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -459,6 +500,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/c++/11/bits/stl_multimap.h:
 
 /usr/include/features.h:
+
+/usr/include/c++/11/bits/atomic_base.h:
 
 /usr/include/c++/11/ext/numeric_traits.h:
 
@@ -487,6 +530,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/c++/11/bits/allocator.h:
+
+/usr/include/c++/11/pstl/glue_memory_defs.h:
 
 /usr/include/c++/11/ext/type_traits.h:
 
@@ -606,6 +651,8 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 
 /usr/include/c++/11/bits/ios_base.h:
 
+/usr/include/c++/11/ext/concurrence.h:
+
 /usr/include/x86_64-linux-gnu/c++/11/bits/gthr-default.h:
 
 /usr/include/c++/11/bits/cpp_type_traits.h:
@@ -628,11 +675,15 @@ CMakeFiles/Question-1-out.dir/Question-1/Question-1.cc.o: ../Question-1/Question
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/c++/11/bits/allocated_ptr.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/c++/11/ext/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/11/bits/shared_ptr_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 

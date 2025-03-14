@@ -8,6 +8,7 @@
 #include <vector>
 #include <initializer_list>
 #include <cmath>
+#include <memory>
 
 const int values[] = { 1,2,3,4,5 };
 const int val_size = sizeof values / sizeof(int);
@@ -41,14 +42,20 @@ int main() {
 
     int x = -10;
     int y = 15;
-    // NB: im assuming this is what they want?
-    std::cout << " " << "(" << x << "," << y << ")" << std::endl;
+
+    std::cout << "(" << x << "," << y << ")" << std::endl;
 
     // print integer ratios of y:x till x < y
     // invalid ratios should print 0
-    while (x < y)
-    {
-        std::cout << "ratio: " << y/x << std::endl;
+
+    // NB: not sure if the comments here are correct -> this will output nothing if till x < y as x is already < y
+    while (x >= y)
+    {   
+        if (x == 0){
+            std::cout << "ratio: " << 0 << std::endl;
+        } else {
+            std::cout << "ratio: " << y/x << std::endl;
+        }
         x++;
         y--;
     }
@@ -56,7 +63,7 @@ int main() {
 
     int i = 1, j = 1; // don't change values
 
-    if ((i = !3) & (j = 1))
+    if ((i != 3) && (j == 1))
     {
         std::cout << "j is 1 and i is not 3\n";
     }
@@ -74,18 +81,13 @@ int main() {
 
     m.insert(std::make_pair(1, 2.0));
 
-
-    // NB: seems a little silly?
     const int n = 1;
     const int* p = &n;
     const int** pp = &p;
     show_output(pp);
 
     // Initialise a person on the heap with the use of smart pointers (unique_ptr) instead.
-    struct person* ptr;
-    // This is too c, not cpp:
-    // ptr = (struct person*)malloc(sizeof(struct person));
-    ptr = new person;
+    std::unique_ptr<person> ptr = std::make_unique<person>();
     ptr->age = 10;
     ptr->weight = 55.5;
 
