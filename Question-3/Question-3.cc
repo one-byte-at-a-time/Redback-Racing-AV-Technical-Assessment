@@ -71,35 +71,9 @@ STEPS:
     - output with timestamp
 */
 
-
-// String Splitter Helper
-std::vector<std::string> splitString(std::string string, char delimiter){
-
-    std::istringstream stream(string);
-    std::string word;
-    std::vector<std::string> words;
-
-    while (std::getline(stream, word, delimiter)){
-            words.push_back(word);
-    }
-
-    return words;
-}
-
-// Extract Timestamp, MessageId and Values from Raw Log
-std::vector<std::string> extractLog(std::string rawLog){
-
-    // Split out timestamp
-    std::vector<std::string> log = splitString(rawLog, ' ');
-
-    // Split out MessageID and vals (if any)
-    std::vector<std::string> values = splitString(log[2], '#');
-
-    // Add timestamp to values vector
-    values.insert(values.begin(), log[0]);
-
-    return values;
-}
+// HELPERS:
+std::vector<std::string> splitString(std::string string, char delimiter);
+std::vector<std::string> extractLog(std::string rawLog);
 
 int main() {
 
@@ -158,4 +132,35 @@ int main() {
     file.close();
 
     return 0;
+}
+
+// HELPER FUNCTIONS:
+
+// String Splitter Helper
+std::vector<std::string> splitString(std::string string, char delimiter){
+
+    std::istringstream stream(string);
+    std::string word;
+    std::vector<std::string> words;
+
+    while (std::getline(stream, word, delimiter)){
+            words.push_back(word);
+    }
+
+    return words;
+}
+
+// Extract Timestamp, MessageId and Values from Raw Log
+std::vector<std::string> extractLog(std::string rawLog){
+
+    // Split out timestamp
+    std::vector<std::string> log = splitString(rawLog, ' ');
+
+    // Split out MessageID and vals (if any)
+    std::vector<std::string> values = splitString(log[2], '#');
+
+    // Add timestamp to values vector
+    values.insert(values.begin(), log[0]);
+
+    return values;
 }

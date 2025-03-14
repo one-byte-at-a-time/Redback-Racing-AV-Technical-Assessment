@@ -50,8 +50,14 @@ public:
 
 };
 
-// This will not compile until you implement MockObserver.
+// MockObserver
+class MockObserver : public Observer {
+public:
+    MOCK_METHOD(void, ReactToEvent, (Actor* actor), (override));
+};
 
+
+// This will not compile until you implement MockObserver.
 TEST(ActorTest, ObserversAreCalled) {
 	auto observer = std::make_shared<MockObserver>();
 	Actor actor = { observer };

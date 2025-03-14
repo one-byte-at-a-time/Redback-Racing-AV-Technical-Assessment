@@ -1,0 +1,5 @@
+question-1 0 0
+question-2 1 0.257307
+question-3 1 0.0203515
+---
+question-1
