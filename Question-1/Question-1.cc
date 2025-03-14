@@ -72,7 +72,7 @@ int main() {
     for (int i = 0; i < val_size; i++)
         m.insert(std::make_pair(values[i], pow(values[i], .5)));
 
-    m.insert(1, 2);
+    m.insert(std::make_pair(1, 2.0));
 
 
     // NB: seems a little silly?
@@ -92,7 +92,7 @@ int main() {
     // Initialise with 5 integers
     // Foo foo;
     std::initializer_list<int> list = {1,2,3,4,5};
-    Foo foo = new Foo(list);
+    Foo foo(list);
 
     return 0;
 }
